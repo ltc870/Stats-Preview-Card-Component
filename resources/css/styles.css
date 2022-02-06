@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.info {
+  padding: 2em;
+  padding-top: 0;
+}
+
+.info-text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: .9375rem;
+  line-height: 1.6;
+  margin-bottom: 3em;
+  
+}
+
+.stats {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 0;
+}
+
+.data {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.item {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: .75rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+
+.container {
+  background-color: hsl(233, 47%, 7%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 6em 0;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  max-width: 375px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.img {
+  background-color: hsla(277, 66%, 53%, 0.575);
+  background-image: url("../../resources/images/image-header-mobile.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 100%;
+  margin-bottom: 2.5em;
+  padding: 8.6em;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+@media (min-width: 1100px) {
+  .row {
+    display:flex;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 3em;
+  }
+
+  .card {
+    width: 68%;
+    max-width: 1000px;
+    text-align: initial;
+    border-top-left-radius: 6px;
+  }
+
+  .info {
+    margin-top: 2em;
+    margin-right: 2em;
+    order: -1;
+    width: 50%;
+    padding-left: 3em;
+    padding-bottom: 0;
+  }
+
+  .info-text {
+    width: 365px;
+    margin-left: 0;
+  }
+
+  .stats {
+    justify-content: space-between;
+    margin-right: 3em;
+  }
+
+  .set2 {
+    margin-left: 3em;
+  }
+
+  .set3 {
+    margin-left: 3em;
+  }
+
+  .img {
+    background-image: url("../../resources/images/image-header-desktop.jpg");
+    width: 50%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  font-family: 'Inter', sans-serif;
+}
